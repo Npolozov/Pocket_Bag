@@ -1,0 +1,173 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.382);
+  z-index: 2;
+}
+
+.header_body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  
+  
+}
+
+.header_logo {
+  z-index: 3;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.2;
+letter-spacing: 0.05em;
+color: yellow;
+transition: var(--animation);
+
+&:hover {
+  color: white;
+}
+}
+
+.header_logo--span {
+  transition: var(--animation);
+  color: white;
+
+  &:hover {
+    color: yellow;
+  }
+}
+
+.header_list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header_item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.header_link {
+  padding: 0 0 5px 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.38;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid transparent;
+  color: var(--primary-text-color);
+  transition: all var(--animation);
+
+  &:hover,
+  &:focus {
+    color: yellow;
+    border-color: yellow;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header_body {
+    height: 50px;
+  }
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+
+  }
+
+  .header_burger::after,
+  .header_burger::before {
+    content: "";
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: var(--animation);
+
+  }
+
+  .header_burger::after {
+    bottom: 0;
+  }
+
+  .header_burger::before {
+    top: 0;
+  }
+
+  .header_burger span {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: var(--animation);
+
+  }
+
+  .header_burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header_burger.active span {
+    transform: scale(0);
+  }
+
+  .header_menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(53, 49, 49, 0.95);
+    padding: 70px 20px 10px 20px;
+    transition: all linear 300ms;
+    overflow: auto;
+  }
+
+  .header_menu.active {
+    top: 0;
+  }
+
+  .header_list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .header_link {
+    font-size: 14px;
+  }
+
+  .header_logo {
+    font-size: 18px;
+  }
+}

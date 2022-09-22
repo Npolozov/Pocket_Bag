@@ -1,0 +1,32 @@
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.slick-dots li button {
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  background-color: white;
+  border: 2px solid yellow;
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var( --background-color);
+  color: black;
+  //   min-width: 320px;
+}
+
+section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
