@@ -41,15 +41,16 @@ transition: var(--animation);
 &:hover {
   color: white;
 }
+&:hover .header_logo--span {
+  color: yellow;
+}
 }
 
-.header_logo--span {
+
+
+.header_logo--span  {
   transition: var(--animation);
   color: white;
-
-  &:hover {
-    color: yellow;
-  }
 }
 
 .header_list {
