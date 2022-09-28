@@ -1,5 +1,6 @@
-.delivery {
-    background-color: white;
+section.delivery {
+    padding: 50px 0 50px 0;
+    background-color: #191c26;
 }
 
 // .block {
@@ -15,12 +16,59 @@
     text-align: left;
     font-family: 'Raleway';
     font-style: normal;
+    background-color: transparent;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.05em;
-    // color: var(--primary-text-color);
+    color: var(--primary-text-color);
+    // color: #fbfbfb;
+    position: relative;
+    border: none;
+    border-bottom: solid 2px #313131;
 
 }
 
-.block._init
+.block._init .block_title {
+    cursor: pointer;
+}
+
+.block._init .block_title {
+    padding: 10px 40px 10px 0;
+}
+
+.block._init .block_title::after,
+.block._init .block_title::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: var(--primary-text-color);
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: transform var(--animation);
+
+}
+
+.block._init .block_title::after {
+transform: rotate(-90deg);
+}
+
+.block._init .block_title._active::after {
+    transform: rotate(0deg);
+    background-color:  var(--accent-color);
+}
+
+// .block_1 .block_item {
+//     background-color: aqua;
+// }
+
+.block_text {
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  padding: 5px 15px;
+}
+
