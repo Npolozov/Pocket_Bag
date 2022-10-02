@@ -1,22 +1,29 @@
-<section class="form" id="form">
+<section class="section_form">
     <div class="container">
-      <h2 class="title form">Онлайн-заказ</h2>
-      <form class="form" id="form">
+      <form action="#" id="form" class="form_body" >
+        <input type="hidden" name="admin_email[]" value="npolozov0@gmail.com">
+        <h2 class="title form">Онлайн-заказ</h2>
         <div class="input-conteiner">
-          <input  id="user_name" class="input" type="text" name="username" placeholder=" "/>
+          <input  id="user_name" class="input" type="text"  name="name" placeholder=" "/>
           <label  for="user_name" class="online-label">Имя*
-        </label></div>
+        </label>
+      </div>
         
         <div class="input-conteiner">
-          <input  id="user_tel" class="input" type="tel" name="usertel" placeholder=" "/>
-          <label  for="user_tel" class="online-label">Телефон*
-        </label></div>
+          <input  id="user_name" class="input" type="number"  name="tel" placeholder=" "/>
+          <label  for="user_name"  class="online-label">Телефон*
+        </label>
+      </div>
+      <div class="input-conteiner">
+        <input    id="user_mail" class="input" type="text" name="email" placeholder=" "/>
+        <label  for="user_mail"  class="online-label">Почта*
+      </label>
+    </div>
    
-        <div class="input-conteiner">
-          <label>            <input class="input_textarea" type="text" name="feedback" rows="5" placeholder="сообщение*"/>
-          </label></div>
-
+        <div class="input-conteiner">           
+            <input class="input_textarea" type="text" name="message" rows="5" placeholder="сообщение*"/>
+        </div>
+        <button type="submit" class="btn form__btn">отправить</button>
       </form>
-      <button class="btn form__btn">отправить</button>
     </div>
   </section>
