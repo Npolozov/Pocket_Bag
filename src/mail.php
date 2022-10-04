@@ -38,3 +38,6 @@ foreach ( $admin_email as $key => $value ) {
 $mail->Subject = 'Заявка';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
+
+$mail->send();
+?>

@@ -17,6 +17,9 @@ function formSend(e) {
 
         console.log(formData);
 
+        formData.forEach(item => {
+            console.log(item);
+        })
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200) {
