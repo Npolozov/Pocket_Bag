@@ -5,7 +5,7 @@
   "homepage": "https://Npolozov.github.io/Pocket_bag",
   "scripts": {
     "start": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /Pocket_bag/"
+    "build": "parcel build src/*.html --public-url /"
   },
   "repository": {
     "type": "git",
