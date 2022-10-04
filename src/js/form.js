@@ -1,28 +1,33 @@
-const { post } = require("jquery");
-
 
 const form = document.getElementById('form')
-console.log(form)
+
 
 form.addEventListener('submit', formSend);
 
-async function formSend(e) {
+console.log(form)
+
+function formSend(e) {
     e.preventDefault();
 
-    let formData = new FormData(form);
+    let self = e.currentTarget;
 
-    let response = await fetch('sendmail.phph', {
-        method: 'POST',
-        body: formData
-    });
-    if(responce.ok) { 
-        let result = await response.json();
-        alert(result.message)
-        formPreview.innertHTML= '';
-        form.reset();
-    } else {
-        alert('Ошибка')
-    }
+    // отправка
+		let formData = new FormData(self);
+		let xhr = new XMLHttpRequest();
+
+        console.log(formData);
+
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					console.log('Отправлено');
+                }
+            }
+        }
+
+        xhr.open('POST', 'mail.php', true);
+		xhr.send(formData);
+        e.currentTarget.reset();
 }
 
 
