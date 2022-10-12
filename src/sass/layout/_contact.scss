@@ -1,0 +1,32 @@
+section.contact {
+    background-color: #191C26;
+}
+
+.container.contact {
+text-align: center;
+}
+
+.contact-footer__address {
+    font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+  
+}
+
+.soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.soc-link {
+    
+}
+
