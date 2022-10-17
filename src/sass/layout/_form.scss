@@ -1,28 +1,53 @@
 .section_form {
-    background-color: #191C26;
+  background-color: #191c26;
 }
 
 .form_body {
-    display: flex;
-    flex-direction: column;
-    @include tablet {
-      padding: 0 80px 0 80px;
-    }
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    padding: 0 80px 0 80px;
+  }
 }
 
 .input-conteiner {
   margin-bottom: 44px;
 }
 .input {
-    color: var(--primary-text-color);
-    width: 100%;
-    height: 24px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid;
-    border-color: rgba(157, 164, 189, 0.4);
+  border: none;
+  background: none;
+  outline: none;
+  color: rgba(157, 164, 189, 0.4);
+  width: 100%;
+  height: 24px;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-color: rgba(157, 164, 189, 0.4);
+  transition: border-color var(--animation);
+
+  &:hover,
+  &:focus {
     outline: none;
-    transition: border-color var(--animation);
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+.input_textarea {
+  color: rgba(157, 164, 189, 0.4);
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: rgba(157, 164, 189, 0.4);
+  transition: border-color var(--animation);
+  margin-bottom: 44px;
 
   &:hover,
   &:focus {
@@ -30,64 +55,29 @@
   }
 
   &::placeholder {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(--primary-text-color);
-  }
-
-}
-
-.input_textarea {
     color: var(--primary-text-color);
-    outline: none;
-    resize: none;
-    width: 100%;
-    height: 100px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid;
-    border-color: rgba(157, 164, 189, 0.4);
-    transition: border-color var(--animation);
-    margin-bottom: 44px;
-
-    &:hover,
-  &:focus {
-    border-color: var(--accent-color);
   }
-
-  &::placeholder {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-      }
 }
 
 .input-conteiner {
-    position: relative;
+  position: relative;
 }
 
 .online-label {
-    color: var(--primary-text-color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: transform var(--animation);
+  color: var(--primary-text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform var(--animation);
 }
-
 
 .input:focus + .online-label,
 .input:not(:placeholder-shown) + .online-label {
-  color: var( --primary-text-color);
+  color: var(--primary-text-color);
   transform: translateY(-100%);
 }
