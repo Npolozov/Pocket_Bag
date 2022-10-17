@@ -1,5 +1,9 @@
 section.contact {
-  background-color: #191c26;
+  display: none;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    background-color: #191c26;
+  }
 }
 
 .container.contact {
@@ -36,6 +40,11 @@ section.contact {
 
 .footer-social-logo {
   fill: currentColor;
+
+  @include desktop {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .header_logo.footer {
@@ -52,6 +61,10 @@ section.contact {
   color: var(--primary-text-color);
   margin-bottom: 10px;
   transition: color var(--animation);
+
+  @include desktop {
+    font-size: 18px;
+  }
 
   &:hover,
   &:focus {

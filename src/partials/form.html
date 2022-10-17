@@ -1,28 +1,125 @@
 <section class="section_form">
-    <div class="container">
-      <form action="#"  id="form" class="form_body"  >
-        <input type="hidden" name="admin_email[]" value="npolozov@pocketbag.com.ua">
-        <h2 class="title form">Онлайн-заказ</h2>
-        <div class="input-conteiner">
-          <input  id="user_name" class="input _req" type="text"  name="ім'я" placeholder="."/>
-          <label  for="user_name" class="online-label">Ім'я*
-        </label>
-      </div>       
-        <div class="input-conteiner">
-          <input  id="user_tel" class="input _req" type="number"  name="телефон" placeholder="."/>
-          <label  for="user_tel"  class="online-label">Телефон*
-        </label>
+  <div class="container">
+    <form action="#" id="form" class="form_body">
+      <input
+        type="hidden"
+        name="admin_email[]"
+        value="npolozov@pocketbag.com.ua"
+      />
+      <h2 class="title form">Онлайн-заказ</h2>
+      <div class="input-conteiner">
+        <input
+          id="user_name"
+          class="input _req"
+          type="text"
+          name="ім'я"
+          placeholder="."
+        />
+        <label for="user_name" class="online-label">Ім'я* </label>
       </div>
       <div class="input-conteiner">
-        <input    id="user_mail" class="input _req _email" type="text" name="пошта" placeholder="."/>
-        <label  for="user_mail"  class="online-label">Пошта*
-      </label>
+        <input
+          id="user_tel"
+          class="input _req"
+          type="number"
+          name="телефон"
+          placeholder="."
+        />
+        <label for="user_tel" class="online-label">Телефон* </label>
+      </div>
+      <div class="input-conteiner">
+        <input
+          id="user_mail"
+          class="input _req _email"
+          type="text"
+          name="пошта"
+          placeholder="."
+        />
+        <label for="user_mail" class="online-label">Пошта* </label>
+      </div>
+
+      <div class="input-conteiner">
+        <input
+          id="user_tel"
+          class="input _req"
+          type="text"
+          name="телефон"
+          placeholder="."
+        />
+        <label for="user_tel" class="online-label">Місто* </label>
+      </div>
+
+      <div class="input-conteiner">
+        <input
+          id="user_tel"
+          class="input _req"
+          type="number"
+          name="телефон"
+          placeholder="."
+        />
+        <label for="user_tel" class="online-label"
+          >відділення нової пошти*
+        </label>
+      </div>
+
+      <div class="input-conteiner">
+        <input
+          class="input_textarea"
+          type="text"
+          name="message"
+          rows="5"
+          placeholder="сообщение*"
+        />
+      </div>
+      <button type="submit" class="btn form__btn">отправить</button>
+    </form>
+    <div class="contact_footer">
+      <a href="#magazine" class="header_logo footer"
+        >Pocket<span class="header_logo--span">Bag</span>
+      </a>
+      <div>
+        <a href="tel:+380961111111" class="tel_footer">+38 096 111 11 11</a>
+      </div>
+      <div>
+        <ul class="soc-list list">
+          <li class="soc-item">
+            <a href="#" class="soc-link">
+              <svg class="footer-social-logo" width="20" height="20">
+                <use
+                  href="./img/svg-header/soc-contact.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-item">
+            <a href="" class="soc-link">
+              <svg class="footer-social-logo" width="20" height="20">
+                <use
+                  href="./img/svg-header/soc-contact.svg#icon-whatsapp"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-item">
+            <a href="" class="soc-link">
+              <svg class="footer-social-logo" width="20" height="20">
+                <use
+                  href="./img/svg-header/soc-contact.svg#icon-telegram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-item">
+            <a href="" class="soc-link">
+              <svg class="footer-social-logo" width="20" height="20">
+                <use
+                  href="./img/svg-header/soc-contact.svg#icon-whatsapp"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-   
-        <div class="input-conteiner">           
-            <input class="input_textarea" type="text" name="message" rows="5" placeholder="сообщение*"/>
-        </div>
-        <button type="submit" class="btn form__btn">отправить</button>
-      </form>
-    </div>
-  </section>
+  </div>
+</section>

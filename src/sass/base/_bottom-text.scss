@@ -6,11 +6,18 @@
   color: var(--text-title-color);
   width: 350px;
   margin-bottom: 20px;
+  @include desktop {
+    width: 450px;
+  }
 
   &.paragraf {
     width: 350px;
     font-size: 14px;
     color: var(--text-title-color);
     margin-bottom: 40px;
-}
+
+    @include desktop {
+      width: 450px;
+    }
+  }
 }

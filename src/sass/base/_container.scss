@@ -11,6 +11,8 @@
   }
   @include desktop {
     width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   //   @media screen and (min-width: 320px) {

@@ -1,4 +1,4 @@
-.conteiner {
+.container {
   &.about {
     display: flex;
   }
@@ -8,9 +8,50 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  display: flex;
   margin-right: 30px;
 }
 
-.about_item--photo:not(:last-child) {
-  margin-bottom: 30px;
+.about_item--photo.tab {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.about_item--photo {
+  height: 370px;
+  overflow: hidden;
+
+  &:hover .img_scale {
+    transform: scale(1.15);
+  }
+}
+
+.img_scale {
+  transition: transform var(--slow-animation);
+}
+
+.about_item--photo:not(:first-child) {
+  margin-left: 10px;
+}
+
+.top-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-title-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 21px;
+  }
 }
