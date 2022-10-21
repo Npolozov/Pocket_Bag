@@ -77,9 +77,9 @@
 }
 
 @media screen and (max-width: 1199px) {
-  // body.lock {
-  //   overflow: hidden;
-  // }
+  body.lock {
+    overflow: hidden;
+  }
   .header_body {
     height: 50px;
   }

@@ -3,6 +3,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 let lightbox = new SimpleLightbox('.gallery_item a', {
   captions: true,
-  captionsData: 'alt',
+  // captionsData: 'alt',
   captionDelay: 250,
+  heightRatio: 1,
 });

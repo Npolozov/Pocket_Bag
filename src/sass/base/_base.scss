@@ -1,8 +1,11 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: var( --background-color);
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-color);
   background-color: white;
   //   min-width: 320px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 section {
@@ -21,7 +24,6 @@ section {
 a {
   text-decoration: none;
 }
-
 
 // input:-webkit-autofill,
 // input:-webkit-autofill:hover,

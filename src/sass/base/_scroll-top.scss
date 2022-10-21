@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 90px;
   right: 30px;
+  z-index: 1001;
 
   display: flex;
   align-items: center;
@@ -15,6 +16,8 @@
   cursor: pointer;
   transition: background-color 250ms linear;
   animation: slide-top 1s linear 2s infinite alternate both;
+  opacity: 1;
+  transition: 0.4s;
 
   &:hover {
     background-color: var(--accent-color);
@@ -23,4 +26,8 @@
 
 .arrow-top {
   fill: var(--background-color);
+}
+
+.scroll-hide {
+  opacity: 0;
 }
