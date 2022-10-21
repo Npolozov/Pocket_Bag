@@ -33,14 +33,14 @@
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.05em;
-  color: yellow;
+  color: var(--accent-color);
   transition: var(--animation);
 
   &:hover {
     color: white;
   }
   &:hover .header_logo--span {
-    color: yellow;
+    color: var(--accent-color);
   }
 }
 
@@ -71,8 +71,8 @@
 
   &:hover,
   &:focus {
-    color: yellow;
-    border-color: yellow;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
 
@@ -142,7 +142,7 @@
     height: 120px;
     background-color: rgba(53, 49, 49, 0.95);
     padding: 70px 20px 10px 20px;
-    transition: var(--slow-animation);
+    transition: var(--animation);
     overflow: auto;
   }
 
