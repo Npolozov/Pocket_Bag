@@ -1,3 +1,7 @@
+.magazine {
+  background: #f7f7f7;
+}
+
 .magazine .container {
   @include tablet {
     padding: 0 160px 0 160px;
@@ -9,12 +13,11 @@
 }
 
 .list_magazine {
-  @include desktop  {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
- 
 }
 
 .item_magazine {
@@ -24,7 +27,7 @@
   border-radius: 0px 0px 4px 4px;
   height: 100%;
 
-  @include desktop  {
+  @include desktop {
     flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
     min-width: 0;
@@ -34,7 +37,7 @@
 .item_magazine:not(:last-child) {
   margin-bottom: 30px;
 
-  @include desktop  {
+  @include desktop {
     margin-bottom: 0px;
   }
 }
@@ -60,4 +63,24 @@
   line-height: 1.38;
   letter-spacing: 0.02em;
   color: #303030;
+}
+
+.magazine_link {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: #303030;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

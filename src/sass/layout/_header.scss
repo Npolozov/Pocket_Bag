@@ -7,7 +7,7 @@
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -23,32 +23,28 @@
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  
-  
 }
 
 .header_logo {
   z-index: 3;
   font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 1.2;
-letter-spacing: 0.05em;
-color: yellow;
-transition: var(--animation);
-
-&:hover {
-  color: white;
-}
-&:hover .header_logo--span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
   color: yellow;
+  transition: var(--animation);
+
+  &:hover {
+    color: white;
+  }
+  &:hover .header_logo--span {
+    color: yellow;
+  }
 }
-}
 
-
-
-.header_logo--span  {
+.header_logo--span {
   transition: var(--animation);
   color: white;
 }
@@ -93,12 +89,11 @@ transition: var(--animation);
     width: 30px;
     height: 20px;
     z-index: 3;
-
   }
 
   .header_burger::after,
   .header_burger::before {
-    content: "";
+    content: '';
     background-color: white;
     display: inline-block;
     position: absolute;
@@ -106,7 +101,6 @@ transition: var(--animation);
     height: 2px;
     left: 0;
     transition: var(--animation);
-
   }
 
   .header_burger::after {
@@ -124,7 +118,6 @@ transition: var(--animation);
     height: 2px;
     top: 9px;
     transition: var(--animation);
-
   }
 
   .header_burger.active::before {
@@ -149,7 +142,7 @@ transition: var(--animation);
     height: 120px;
     background-color: rgba(53, 49, 49, 0.95);
     padding: 70px 20px 10px 20px;
-    transition: all linear 300ms;
+    transition: var(--slow-animation);
     overflow: auto;
   }
 
@@ -162,7 +155,6 @@ transition: var(--animation);
     text-align: center;
     justify-content: center;
   }
-
 
   .header_link {
     font-size: 14px;

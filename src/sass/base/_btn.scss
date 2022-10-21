@@ -1,28 +1,23 @@
 .btn {
-    display: block;
-    width: 160px;
-    height: 40px;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    border: 1px solid var(--accent-color);
-    background-color: transparent;
-    border-radius: 30px;
-    transition: color 250ms linear, background-color 250ms linear;
-    margin: 0 auto;
-  
-  
-    &:hover,
-    &:focus {
-        color: var( --text-title-color);
-      background-color: var(--accent-color);
-    }
+  display: block;
+  min-width: 160px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 30px;
+  transition: color 250ms linear, background-color 250ms linear;
+  margin: 0 auto;
 
-    &.magazine {
-      
-    }
+  &:hover,
+  &:focus {
+    color: var(--text-title-color);
+    background-color: var(--accent-color);
   }
+}
